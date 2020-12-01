@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  /* 가로스크롤방지 */
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  /* 자간 */
+  letter-spacing: -0.05em;
+  background: white;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Nav Start */
+.global-nav {
+  height: 44px;
+}
+
+.global-nav-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* Nav End */
