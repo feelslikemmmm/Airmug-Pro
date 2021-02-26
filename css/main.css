@@ -24,7 +24,9 @@ p {
 }
 
 .global-nav-links {
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
