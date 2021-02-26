@@ -18,17 +18,42 @@ p {
   line-height: 1.6;
 }
 
+a {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
+}
+
 /* Nav Start */
 .global-nav {
   height: 44px;
 }
 
-.global-nav-links {
+.local-nav {
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+}
+
+.global-nav-links,
+.local-nav-links {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.global-nav-links {
+  justify-content: space-between;
+}
+
+.product-name {
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.local-nav-links a:not(.product-name) {
+  margin-left: 2em;
+  font-size: 0.8rem;
 }
 /* Nav End */
