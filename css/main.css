@@ -199,6 +199,16 @@ a {
   top: 50%;
   left: 50%;
 }
+
+.image-blend-canvas {
+  
+}
+
+#scroll-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Section End */
 
 
