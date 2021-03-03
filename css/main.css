@@ -23,6 +23,9 @@ a {
   color: rgb(29, 29, 31);
   text-decoration: none;
 }
+.contaeinr {
+  overflow-x: hidden;
+}
 
 /* Nav Start */
 .global-nav {
@@ -51,14 +54,19 @@ a {
   top: 0;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: saturate(180%) blur(15px);
+  	/* for iPhone */
+	-webkit-backdrop-filter: saturate(180%) blur(15px);
+	-moz-backdrop-filter: saturate(180%) blur(15px);
+	-o-backdrop-filter: saturate(180%) blur(15px);
+	backdrop-filter: saturate(180%) blur(15px);
 }
 
 .global-nav-links,
 .local-nav-links {
-  height: 100%;
   display: flex;
   align-items: center;
   max-width: 1000px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -66,15 +74,16 @@ a {
   justify-content: space-between;
 }
 
-.product-name {
+.local-nav-links .product-name {
   margin-right: auto;
   font-size: 1.4rem;
   font-weight: bold;
 }
-
+.local-nav-links a {
+	font-size: 0.8rem;
+}
 .local-nav-links a:not(.product-name) {
   margin-left: 2em;
-  font-size: 0.8rem;
 }
 /* Nav End */
 
@@ -135,7 +144,7 @@ a {
   color: rgba(29,29, 31);
 }
 
-.desc-message {
+.sticky-elem.desc-message {
   width: 50%;
   font-weight: bold;
   opacity: 0;
@@ -195,6 +204,7 @@ a {
 #show-scene-2 #scroll-section-2 .sticky-elem,
 #show-scene-3 #scroll-section-3 .sticky-elem {
   display: block;
+  will-change: transform, opacity;
 }
 
 .sticky-elem-canvas {
@@ -218,6 +228,7 @@ a {
 .image-blend-canvas.sticky {
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 /* Section End */
 
