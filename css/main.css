@@ -213,6 +213,10 @@ body.before-load {
   will-change: transform, opacity;
 }
 
+.scroll-effect-end .sticky-elem{
+  display: none !important;
+}
+
 .sticky-elem-canvas {
   top: 0;
   height: 100%;
@@ -286,6 +290,10 @@ body.before-load {
   stroke-dashoffset: 0;
   fill: transparent;
   animation: loading-circle-ani 1s infinite;
+}
+
+.normal-content {
+  margin-bottom: 10rem;
 }
 
 /* Section End */
