@@ -252,6 +252,9 @@ body.before-load {
   transition: 0.5s;
 }
 
+.before-load .container {
+  display: none;
+}
 .before-load .loading {
   opacity: 1;
 }
