@@ -521,6 +521,7 @@
   });
 
   window.addEventListener('load', () => {
+    document.body.classList.remove('before-load');
     setLayout();
     sceneInfo[0].objs.context.drawImage(sceneInfo[0].objs.videoImages[0], 0, 0);
   });
@@ -533,7 +534,9 @@
   });
 
   window.addEventListener('orientationchange', setLayout);
-
+  document.querySelector('.loading').addEventListener('transitionend', (e) => {
+    document.body.removeChild(e.currentTarget);
+  });
   setCanvasImages();
 
 })();
