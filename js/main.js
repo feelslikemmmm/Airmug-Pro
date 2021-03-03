@@ -307,6 +307,7 @@
         }
 
         objs.canvas.style.transform = `scale(${canvasScaleRatio})`;
+        objs.context.fillStyle = `white`;
         objs.context.drawImage(objs.images[0], 0, 0);
 
         //캔버스 사이즈에 맞춰 가정한 innerWidth와 innerHeight
@@ -314,7 +315,10 @@
         const recalculatedInnerHeight = window.innerHeight / canvasScaleRatio;
 
         if (!values.rectStartY) {
-          values.rectStartY = objs.canvas.getBoundingClientRect().top;
+          // values.rectStartY = objs.canvas.getBoundingClientRect().top;
+          values.rectStartY = objs.canvas.offsetTop + (objs.canvas.height - objs.canvas.height * canvasScaleRatio) / 2;
+          values.rect1X[2].start = (window.innerHeight / 2) / scrollHeight;
+          values.rect2X[2].start = (window.innerHeight / 2) / scrollHeight;
           values.rect1X[2].end = values.rectStartY / scrollHeight;
           values.rect2X[2].end = values.rectStartY / scrollHeight;
         }
