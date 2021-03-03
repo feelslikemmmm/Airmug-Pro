@@ -46,6 +46,13 @@ a {
   border-bottom: 1px solid #ddd;
 }
 
+.local-nav-sticky .local-nav {
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: saturate(180%) blur(15px);
+}
+
 .global-nav-links,
 .local-nav-links {
   height: 100%;
