@@ -27,6 +27,10 @@ a {
   overflow-x: hidden;
 }
 
+body.before-load {
+  overflow: hidden;
+}
+
 /* Nav Start */
 .global-nav {
   position: absolute;
