@@ -1,4 +1,5 @@
 # Airmug Pro
+https://airmug-pro.netlify.app/
 ### Front-end : Javascript
 ### Deploy : Netlify
 ### Role: Front-end
@@ -22,5 +23,4 @@ UI Design <br/>
 Front-end <br/>
 Deploy <br/>
 ### Year
-2020
-2021
+2020 ~ 2021
