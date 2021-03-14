@@ -128,7 +128,6 @@
       imgElem.src = `./video/001/IMG_${6726 + i}.JPG`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
-
     let imgElem2;
     for (let i = 0; i < sceneInfo[2].values.videoImageCount; i++) {
       imgElem2 = new Image();
@@ -143,6 +142,7 @@
       sceneInfo[3].objs.images.push(imgElem3);
     }
   }
+
 
 
   const checkMenu = () => {
