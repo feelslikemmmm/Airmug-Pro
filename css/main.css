@@ -2,12 +2,12 @@
 
 /* Moblie first */
 html {
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
 }
 
 body {
   /* 가로스크롤방지 */
+  font-family: 'Noto Sans KR', sans-serif;
   overflow-x: hidden;
   color: rgb(29, 29, 31);
   /* 자간 */
